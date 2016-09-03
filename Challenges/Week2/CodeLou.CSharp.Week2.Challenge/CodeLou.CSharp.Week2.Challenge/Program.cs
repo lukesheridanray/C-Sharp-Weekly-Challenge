@@ -21,7 +21,8 @@ namespace CodeLou.CSharp.Week2.Challenge
 
             Console.WriteLine("This is the launch application for the first human mission to Mars.");
             Console.Write("Enter the number of seconds you would like to count down from: ");
-            int HowManySeconds = Console.ReadLine();
+            string HowManySeconds = Console.ReadLine();
+            Console.WriteLine("You entered " + HowManySeconds);
 
             // Task 3:
             // Capture the number of seconds that the user would like to count down before liftoff.
