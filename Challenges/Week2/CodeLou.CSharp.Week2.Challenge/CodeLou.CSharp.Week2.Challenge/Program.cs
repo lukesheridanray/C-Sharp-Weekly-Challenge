@@ -4,6 +4,8 @@ namespace CodeLou.CSharp.Week2.Challenge
 {
     class Program
     {
+        
+
         static void Main(string[] args)
         {
             // Task 1:
@@ -20,15 +22,12 @@ namespace CodeLou.CSharp.Week2.Challenge
             Console.ReadLine();
 
             Console.WriteLine("This is the launch application for the first human mission to Mars.");
-            Console.Write("Enter the number of seconds you would like to count down from: ");
-            string HowManySeconds = Console.ReadLine();
-            Console.WriteLine("You entered " + HowManySeconds);
+
 
             // Task 3:
             // Capture the number of seconds that the user would like to count down before liftoff.
             // Hint: You should use another method of the Console class and store the output into a
-            //       variable to use later.
-
+            //       variable to use later
 
             // Task 4:
             // Write a condition to test whether the number that they entered is less than or equal to zero.
@@ -36,6 +35,48 @@ namespace CodeLou.CSharp.Week2.Challenge
             // If the result is true, write "Please enter a positive number." to the console.
             // Hint: The input that you captured is currently a string type. You will have to "parse" it
             //       as a different type in order to pass it to the IsLessThanOrEqualToZero function.
+           
+                //Prompt and store variable
+                Console.Write("Enter the number of seconds you would like to count down from: ");
+                string HowManySeconds = Console.ReadLine();
+
+                int myNumber = Convert.ToInt32(HowManySeconds);
+
+            if (myNumber <= 0)
+            {
+                Console.WriteLine("Please Enter a Positive Number");
+
+            }
+            else
+            {
+             if(myNumber > 0)
+                {
+                    for ( int i =  myNumber; i >= 0; i--)
+                    {
+                        Console.WriteLine(i);
+                    }
+
+                    
+
+                }
+                Console.WriteLine("Blast Off");
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             // Task 5:
@@ -47,10 +88,18 @@ namespace CodeLou.CSharp.Week2.Challenge
             //       Developer Network (MSDN) website contains all of the documentation for C#. If you want
             //       to learn more about loops, visit https://msdn.microsoft.com/en-us/library/32dbftby.aspx.
 
+
+
+
+
+
+
             Console.WriteLine("Press <Enter> to exit...");
             Console.ReadLine();
         }
 
+
+        //The major outstanding thing that was left was the fact that I did not know how to call this and save as a parameter. 
         static bool IsLessThanOrEqualToZero(int num)
         {
             return num <= 0;
