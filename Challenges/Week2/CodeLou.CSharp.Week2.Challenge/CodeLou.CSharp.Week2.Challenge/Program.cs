@@ -40,7 +40,7 @@ namespace CodeLou.CSharp.Week2.Challenge
                 Console.Write("Enter the number of seconds you would like to count down from: ");
                 string HowManySeconds = Console.ReadLine();
 
-                int myNumber = Convert.ToInt32(HowManySeconds);
+           var myNumber = int.Parse(HowManySeconds);
 
             if (IsLessThanOrEqualToZero(myNumber))
             {
