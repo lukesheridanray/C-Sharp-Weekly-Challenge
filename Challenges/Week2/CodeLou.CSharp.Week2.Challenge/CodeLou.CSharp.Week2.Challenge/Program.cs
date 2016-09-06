@@ -42,21 +42,18 @@ namespace CodeLou.CSharp.Week2.Challenge
 
                 int myNumber = Convert.ToInt32(HowManySeconds);
 
-            if (myNumber <= 0)
+            if (IsLessThanOrEqualToZero(myNumber))
             {
-                Console.WriteLine("Please Enter a Positive Number");
-
+                Console.WriteLine("Please enter a positive number");
             }
             else
             {
              if(myNumber > 0)
                 {
-                    for ( int i =  myNumber; i >= 0; i--)
+                    for (int i = myNumber; i >= 0; i--)
                     {
                         Console.WriteLine(i);
-                    }
-
-                    
+                    }        
 
                 }
                 Console.WriteLine("Blast Off");
@@ -99,7 +96,6 @@ namespace CodeLou.CSharp.Week2.Challenge
         }
 
 
-        //The major outstanding thing that was left was the fact that I did not know how to call this and save as a parameter. 
         static bool IsLessThanOrEqualToZero(int num)
         {
             return num <= 0;
