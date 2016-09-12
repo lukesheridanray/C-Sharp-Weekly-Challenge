@@ -37,8 +37,8 @@ namespace CodeLou.CSharp.Week2.Challenge
             //       as a different type in order to pass it to the IsLessThanOrEqualToZero function.
            
                 //Prompt and store variable
-                Console.Write("Enter the number of seconds you would like to count down from: ");
-                string HowManySeconds = Console.ReadLine();
+           Console.Write("Enter the number of seconds you would like to count down from: ");
+           string HowManySeconds = Console.ReadLine();
 
            var myNumber = int.Parse(HowManySeconds);
 
